@@ -1,14 +1,9 @@
-Here’s the final correct pipeline assuming:
-
-Docker Hub username = priyanka123
-
-Jenkins credential ID = dockerhub-creds
-
 pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "priyanka123/jenkins-demo"
+        IMAGE_NAME = "priyankapalsaniya/jenkins-demo"
+        IMAGE_TAG  = "latest"
     }
 
     stages {
