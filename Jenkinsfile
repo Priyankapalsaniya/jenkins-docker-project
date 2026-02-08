@@ -24,6 +24,7 @@ pipeline {
                     )
                 ]) {
                     sh '''
+                     echo "Docker user is: $DOCKER_USERNAME"
                         echo "Making script executable..."
                         chmod +x scripts/build_push.sh
 
